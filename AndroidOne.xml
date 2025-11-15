@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="AndroidOne"
+           fetch="https://github.com/AndroidOne-Staging"
+           review=".."
+           revision="refs/heads/16-qpr1" />
+
+  <!-- bootable -->
+  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" groups="pdk-cw" remote="AndroidOne" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="AndroidOne" />
+
+  <!-- build -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="AndroidOne" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="AndroidOne" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- device -->
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="AndroidOne" />
+
+  <!-- frameworks -->
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="AndroidOne" />
+
+  <!-- hardware -->
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="AndroidOne" />
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="AndroidOne" />
+  <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="AndroidOne" />
+  <project path="hardware/qcom-caf/sm8750/display/hal" name="hardware_qcom_display" groups="qcom" revision="16-caf-sm8750" remote="AndroidOne" />
+
+  <!-- kernel -->
+  <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="AndroidOne" />
+
+  <!-- Packages -->
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="AndroidOne" />
+
+  <!-- system -->
+  <project path="system/bpf" name="system_bpf" groups="pdk" remote="AndroidOne" />
+  <project path="system/chre" name="system_chre" groups="pdk" remote="AndroidOne" />
+  <project path="system/core" name="system_core" groups="pdk" remote="AndroidOne" />
+  <project path="system/keymaster" name="system_keymaster" groups="pdk" remote="AndroidOne" />
+  <project path="system/libziparchive" name="system_libziparchive" groups="pdk" remote="AndroidOne" />
+  <project path="system/media" name="system_media" groups="pdk" remote="AndroidOne" />
+  <project path="system/netd" name="system_netd" groups="pdk" remote="AndroidOne" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="AndroidOne" />
+  <project path="system/update_engine" name="update_engine" groups="pdk" remote="AndroidOne" />
+  <project path="system/vold" name="system_vold" groups="pdk" remote="AndroidOne" />
+
+  <!-- vendor -->
+  <project path="vendor/aosp" name="vendor_aosp" remote="AndroidOne" />
+  <project path="vendor/gms" name="vendor_gms" remote="AndroidOne" clone-depth="1" />
+
+</manifest>
