@@ -11,27 +11,16 @@
 
   <!-- external -->
   <project path="external/ant-wireless/hidl" name="LineageOS/android_external_ant-wireless_hidl" groups="qcom,qssi" remote="LineageOS" />
-  <project path="external/avb" name="LineageOS/android_external_avb" groups="pdk" remote="LineageOS" />
   <project path="external/bash" name="LineageOS/android_external_bash" remote="LineageOS" />
-  <project path="external/dtc" name="LineageOS/android_external_dtc" groups="pdk" remote="LineageOS" />
-  <project path="external/e2fsprogs" name="LineageOS/android_external_e2fsprogs" groups="pdk" remote="LineageOS" />
-  <project path="external/exfatprogs" name="LineageOS/android_external_exfatprogs" remote="LineageOS" />
-  <project path="external/gptfdisk" name="LineageOS/android_external_gptfdisk" groups="pdk" remote="LineageOS" />
   <project path="external/htop" name="LineageOS/android_external_htop" remote="LineageOS" />
   <project path="external/json-c" name="LineageOS/android_external_json-c" groups="qcom,qssi" remote="LineageOS" />
   <project path="external/libncurses" name="LineageOS/android_external_libncurses" remote="LineageOS" />
-  <project path="external/mksh" name="LineageOS/android_external_mksh" groups="pdk" remote="LineageOS" />
   <project path="external/nano" name="LineageOS/android_external_nano" remote="LineageOS" />
   <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" remote="LineageOS" />
   <project path="external/openssh" name="LineageOS/android_external_openssh" groups="pdk" remote="LineageOS" />
-  <project path="external/rsync" name="LineageOS/android_external_rsync" remote="LineageOS" />
-  <project path="external/setupcompat" name="LineageOS/android_external_setupcompat" groups="pdk,sysui-studio" remote="LineageOS" />
-  <project path="external/tinycompress" name="LineageOS/android_external_tinycompress" groups="pdk" remote="LineageOS" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="external/unrar" name="LineageOS/android_external_unrar" remote="LineageOS" />
   <project path="external/vim" name="LineageOS/android_external_vim" remote="LineageOS" />
-  <project path="external/wpa_supplicant_8" name="LineageOS/android_external_wpa_supplicant_8" groups="pdk" remote="LineageOS" />
-  <project path="external/zstd" name="LineageOS/android_external_zstd" remote="LineageOS" />
 
   <!-- hardware -->
   <project path="hardware/broadcom/libbt" name="LineageOS/android_hardware_broadcom_libbt" groups="pdk" remote="LineageOS" />

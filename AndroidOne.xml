@@ -26,6 +26,13 @@
   <!-- device -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="AndroidOne" />
 
+  <!-- external -->
+  <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="AndroidOne" />
+  <project path="external/dtc" name="external_dtc" remote="AndroidOne" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="AndroidOne" />
+  <project path="external/mksh" name="external_mksh" remote="AndroidOne" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="AndroidOne" />
+
   <!-- frameworks -->
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="AndroidOne" />
 
@@ -40,12 +47,13 @@
 
   <!-- Packages -->
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="AndroidOne" />
+  <project path="packages/modules/UprobeStats" name="packages_modules_UprobeStats" groups="pdk-cw-fs,pdk-fs" remote="AndroidOne" />
 
   <!-- system -->
-  <project path="system/bpf" name="system_bpf" groups="pdk" remote="AndroidOne" />
   <project path="system/chre" name="system_chre" groups="pdk" remote="AndroidOne" />
   <project path="system/core" name="system_core" groups="pdk" remote="AndroidOne" />
   <project path="system/keymaster" name="system_keymaster" groups="pdk" remote="AndroidOne" />
+  <project path="system/libhidl" name="system_libhidl" remote="AndroidOne" />
   <project path="system/libziparchive" name="system_libziparchive" groups="pdk" remote="AndroidOne" />
   <project path="system/media" name="system_media" groups="pdk" remote="AndroidOne" />
   <project path="system/netd" name="system_netd" groups="pdk" remote="AndroidOne" />
